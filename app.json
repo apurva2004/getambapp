@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "NativeProject",
+    "slug": "ambappfrontend-ktdbtixy6fvutkftfxrnt",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.dhananjay.careflight",
+      "versionCode": 2,
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBwhekKooSCDP-Bi3KyGxSgQ6xicDhbjXk"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8392e73d-57b2-404c-a6bd-93c32cdab82f"
+      }
+    },
+    "owner": "apurva_mundlik"
+  }
+}

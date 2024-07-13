@@ -1,0 +1,25 @@
+App.js is the main entry point which uses a stack navigator component for navigation between pages. 
+
+Login Page: 
+First page is the login page. No functionality implemented. Only frontend. The two buttons are routed to the Driver ambulance tyle selection page and patient home page. 
+
+Patient Home Page:
+If the ambulance isn't booked (!selected) it will show the "home map" component which shows the current position of user and current position of ambulances. It also shows the choice for which ambulance he can book and the cash/card options, book ambulance button. 
+Selecting the card option and pushing the book ambulance button calls a function which sends a POST request to the stripe (written in express) backend. 
+
+else if the ambulance is booked it will show the "route map" component which shows the route from the current location to the ambulance. It also shows the name of the driver and a dummy button to call or cancel the ambulance. 
+
+Driver Ambulance Type Page: 
+Basically has two buttons where the driver can select what ambulance he has and this is passed as a prop to the next page of "driver Home". 
+
+Driver Home page : 
+If the ride isn't confirmed, it will show the "Home map" which shows the user's location and the location of emergencies. 
+
+There is a button called On Duty which when pressed toggles if driver is on duty or not. Whenever it's toggled on, it shows message that location is being shared. 
+
+If the driver is on duty and the ride is not confirmed, he sees all the emergencies list (same as the home map). Out of these he can select the emergency. 
+
+If the driver is on duty and the ride is confirmed, the route map is displayed from the driver's current location to the emergency. Dummy button placed for calling the patient. There is also a cancel button. 
+
+
+
